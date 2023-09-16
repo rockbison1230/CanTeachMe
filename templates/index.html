@@ -20,13 +20,23 @@
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </div>
-        <div class = "grid-container">
+        <div class = "grid-container" style="padding-bottom: 75px;">
             <div class = "grid-item">
-                
-                <img src="../static/images/mist.jpg" alt="Silhouettes of trees in a misty forest">
+                <div class = "layered-square">
+                    <div class = "purple-rectangle">
+                    </div>
+                    <div class = "blue-square">
+                    </div>
+                    <div class = "pink-square">
+                    </div>
+                    <div class = "layered-img">
+                        <img src="../static/images/woman-picture.png" alt="A woman with dyed hair smiling">
+                    </div>
+                </div> 
             </div>
             <div class = "grid-item">
-                <h1 style="display: inline">Let's demystify your conversation</h1>
+                <h1 style="text-align: center;margin-bottom: 0;">Let's demystify </h1>
+                <h1 style="text-align: center; margin: 0;">your conversation</h1>
             </div>   
         </div>
 
@@ -75,14 +85,14 @@
 
         </div>
 
-        <!--{% if userInput %}
+        {% if userInput %}
         <div>
             <p>User Input: {{userInput}}</p>
             <p>Sentiment: {{sentiment}}</p>
             <p>Suggestion: {{suggestion}}</p>
             <p>Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
         </div>
-        {% endif %}-->
+        {% endif %}
 
         
     </body>

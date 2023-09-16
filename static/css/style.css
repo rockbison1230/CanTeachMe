@@ -39,10 +39,50 @@ li a{
     align-items: center;
 }
 
-.grid-item img{
-    height: 30%;
-    width: 30%;
-    padding-left: 50%;
+/*Colorful Square CSS*/
+
+.purple-rectangle{
+    position: absolute;
+    z-index: 1;
+    width: 185px;
+    height: 310px;
+    left: 385px;
+    top: 215px;
+    border-radius: 10px;
+    background: #D7C4FF;
+    opacity: 0.9;
+}
+
+.blue-square{
+    position: absolute;
+    z-index: 2;
+    width: 356px;
+    height: 392px;
+    left: 200px;
+    top: 120px;
+    border-radius: 10px;
+    background: #CBD7F4;
+    opacity: 0.9;
+}
+
+.pink-square{
+    position: absolute;
+    z-index: 3;
+    width: 322px;
+    height: 372px;
+    left: 160px;
+    top: 130px;
+    border-radius: 10px;
+    background: rgba(239, 116, 169, 0.7);
+}
+.layered-img{
+    position: absolute;
+    width: 363px;
+    height: 344px;
+    left: 170px;
+    top: 145px;
+    border-radius: 10px;
+    z-index: 4;
 }
 
 .grid-item h1{
