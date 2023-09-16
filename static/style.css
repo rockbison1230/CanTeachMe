@@ -1,7 +1,36 @@
-input[type="text"]{
-    width: 100%;
+/*Form CSS*/
+body{
+    background-color: lightgrey;
 }
 
-.form-member{
+.header{
+    background-color: aqua;
+}
 
+form{
+    margin: 0 auto;
+    margin-top: 150px;
+    text-align: center;
+}
+
+textarea{
+    background-color: rgb(224, 224, 224);
+    resize: none;
+    width: 1000px;
+}
+
+/*Submit Button*/
+.submit-button{
+    margin-top: 25px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: rgb(150, 150, 150);
+}
+
+.submit-button, text{
+    color: white;
+}
+
+.submit-button:hover{
+    opacity: 70%;
 }
