@@ -29,13 +29,13 @@ def index():
             sentiment = "Neutral"
         response = openai.Completion.create(
             engine="text-davinci-002",
-            prompt=f"Provide a suggestion of an action the receiver of this message can take: '{userInput}'",
+            prompt=f"Suggest an action the receiver of this message can take in response to the message: '{userInput}'",
             max_tokens=60
         )
         suggestion = response.choices[0].text.strip()
         response = openai.Completion.create(
             engine="text-davinci-002",
-            prompt=f"Explain what features make this sentence's sentiment positive: '{userInput}'",
+            prompt=f"Explain whay this sentence's sentiment is positive: '{userInput}'",
             max_tokens=60
         )
         explanation = response.choices[0].text.strip()
