@@ -27,13 +27,6 @@ small_Talk = [
     "The weather's pretty nice out."
 ]
 
-# Define actions and explanations based on sentiment
-actions = {
-    "positive": ("Validate their feelings and offer support.", "Acknowledge their feelings and show empathy."),
-    "negative": ("Use gentle language and ask if they need space or support.", "Offer to listen and understand their perspective."),
-    "neutral": ("Ask for clarification or more information.", "Seek to understand their point of view.")
-}
-
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
