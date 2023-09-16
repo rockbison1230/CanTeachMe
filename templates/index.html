@@ -52,15 +52,11 @@
                 </button>
                 
             </form>
-            {% if userInput %}
             <div class="sentiment-Display">
                 <p>Sentiment: <span class="{%if sentiment == 'Positive'%}sentiment-Positive-Display{% elif sentiment == 'Negative'%}sentiment-Negative-Display{% endif%}">{{sentiment}}</span></p>
                 <p class="suggestion-Display">Suggestion: {{suggestion}}</p>
                 <p class="explanation-Display">Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
-
-               
             </div>
-            {% endif %}
         </div>
         <div class = "expression-statement">
             <h3>Based on the statement provided:</h3>
@@ -97,17 +93,7 @@
 
 
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                // Select the form by its ID
-                var form = document.querySelector("form");
-        
-                // Add a submit event listener to the form
-                form.addEventListener("submit", function (event) {
-                    // Prevent the default form submission behavior
-                    event.preventDefault();
-                });
-            });
+        <script> src="/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/index.js"
         </script>
         
         

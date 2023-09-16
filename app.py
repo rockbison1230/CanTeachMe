@@ -63,7 +63,7 @@ def index():
             )
         explanation = response.choices[0].text.strip()
 
-        return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion, explanation=explanation)
+        return render_template("index.html", sentiment=sentiment, suggestion=suggestion, explanation=explanation)
     else:
         return render_template("index.html", userInput=None)
 
