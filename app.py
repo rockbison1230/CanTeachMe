@@ -34,7 +34,7 @@ def index():
         )
         suggestion = response.choices[0].text.strip()
         response = openai.Completion.create(
-            engine="text-edavinci-002",
+            engine="text-davinci-002",
             prompt=f"Explain what features make this sentence's sentiment positive: '{userInput}'",
             max_tokens=60
         )
