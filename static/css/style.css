@@ -51,6 +51,9 @@ li a:hover,
   margin: 0;
   padding-top: 40px;
   padding-left: 50px;
+  position: relative;
+  left: 80px;
+  top: 2px;
   /*text-align: center;*/
   font-size: 64px;
   font-style: normal;
@@ -80,7 +83,7 @@ textarea {
   border-radius: 10px;
 }
 
-/*Submit Button*/
+/*Submit Button
 .submit-button {
   margin-top: 25px;
   padding: 5px 25px;
@@ -95,7 +98,7 @@ text {
 
 .submit-button:hover {
   opacity: 70%;
-}
+}*/
 
 .footer {
   background-color: #cbd7f4;
@@ -107,7 +110,7 @@ text {
   align-items: center;
 }
 
-.button {
+.submit-button {
   background-color: #e1ecf4;
   border-radius: 3px;
   border: 1px solid #7aa7c7;
@@ -134,17 +137,17 @@ text {
   white-space: nowrap;
 }
 
-.button:hover,
-.button:focus {
+.submit-button:hover,
+.submit-button:focus {
   background-color: #b3d3ea;
   color: #2c5777;
 }
 
-.button:focus {
+.submit-button:focus {
   box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
 }
 
-.button:active {
+.submit-button:active {
   background-color: #a0c7e4;
   box-shadow: none;
   color: #2c5777;
