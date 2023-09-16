@@ -25,7 +25,7 @@ general_positive = [('how are you?', 'positive'),
                     ]
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/index.html', methods=['GET', 'POST'])
 def index():
     # first generate sentiment
     sentiment = None
@@ -71,6 +71,11 @@ def index():
 @app.route('/education.html')
 def education():
     return render_template("education.html")
+
+
+@app.route('/about.html')
+def about():
+    return render_template("about.html")
 
 
 if __name__ == '__main__':

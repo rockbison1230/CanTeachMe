@@ -1,6 +1,21 @@
 /*Body*/
+@font-face {
+  font-family: "NotoSans";
+  src: url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Regular.ttf")
+    format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans-Bold";
+  src: url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Bold.ttf")
+    format("ttf");
+  font-weight: bold;
+  font-style: normal;
+}
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSans", sans-serif;
   background-color: #fcfeff;
   padding: 0;
   margin: 0;
@@ -71,8 +86,9 @@ li a:hover,
 .pink-square {
   position: absolute;
   z-index: 3;
-  width: 322px;
-  height: 372px;
+  width: 363px;
+  height: 344px;
+  flex-shrink: 0;
   left: 160px;
   top: 130px;
   border-radius: 10px;
@@ -107,16 +123,51 @@ li a:hover,
 }
 
 .divisionBorder {
-  content: "";
-  position: absolute;
-  bottom: -20px; /* Adjust the distance of the border from the text */
-  left: 0;
-  width: 100%;
-  margin-bottom: 90px;
-  height: 5px; /* Adjust the height of the rectangle */
-  background: rgba(203, 215, 244, 0.25);
+  width: 100%; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  background-color: rgba(203, 215, 244, 0.25);
+  border-radius: 4px;
+  margin-bottom: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
 }
 
+/* Style for the button */
+.divisionBorder button {
+  background-color: #d7c3ff;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+
+  color: #151515;
+  text-align: center;
+  font-family: "NotoSans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+}
+
+/* Style for the icon */
+.icon {
+  max-width: 100%;
+  height: auto;
+  justify-content: right;
+}
 /*Footer CSS*/
 
 .footer {
@@ -128,21 +179,19 @@ li a:hover,
   padding: 20px;
 }
 
-/* Style for the left section */
 .footer-left {
   flex: 1;
 }
 
-/* Style for the middle section (navigation links) */
 .footer-middle {
-  flex: 1;
+  flex: shrink;
+  list-style: none;
   text-align: center;
 }
-
-.footer-middle ul li {
-  display: block; /* Set list items to be block-level elements */
-  margin-bottom: 10px; /* Add space between list items */
+.footer-middle li {
+  padding: 0;
 }
+
 /* Style for the right section (newsletter sign-up) */
 .footer-right {
   flex: 1;
