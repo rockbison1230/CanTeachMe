@@ -116,3 +116,11 @@ li a:hover,
   height: 5px; /* Adjust the height of the rectangle */
   background: rgba(203, 215, 244, 0.25);
 }
+
+/*Footer CSS*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Add padding for spacing*/
+}
