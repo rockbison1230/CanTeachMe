@@ -1,4 +1,4 @@
-/*Form CSS*/
+/*Body*/
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: #fcfeff;
@@ -6,6 +6,7 @@ body {
   margin: 0;
 }
 
+/*Navbar*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -28,12 +29,12 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover,
 .active {
   background-color: #b0c0e6;
 }
 
+/*First Grid*/
 .grid-container {
   display: grid;
   margin-top: 100px;
@@ -43,7 +44,6 @@ li a:hover,
 }
 
 /*Colorful Square CSS*/
-
 .purple-rectangle {
   position: absolute;
   z-index: 1;
@@ -106,6 +106,7 @@ li a:hover,
   line-height: normal;
 }
 
+/*Form CSS*/
 .container {
   background-color: rgba(203, 215, 244, 25%);
   margin-bottom: 500px;
@@ -140,6 +141,7 @@ textarea {
   margin-bottom: 200px;
   background-color: #007bff;
 }
+
 /*Submit Button
 .submit-button {
   margin-top: 25px;
@@ -155,20 +157,6 @@ text {
 
 .submit-button:hover {
   opacity: 70%;
-}*/
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px; /* Add padding for spacing */
-  background-color: #cbd7f4;
-}
-
-/*.grid-container-bottom {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  align-items: center;
 }*/
 
 .submit-button {
@@ -254,4 +242,20 @@ text {
   outline: none;
   background: transparent;
   width: 100%;
+}
+
+/*Footer CSS*/
+/*.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Add padding for spacing 
+  
+}*/
+
+.grid-container-bottom {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  background-color: #cbd7f4;
 }
