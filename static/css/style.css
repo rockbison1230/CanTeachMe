@@ -1,16 +1,23 @@
 /*Form CSS*/
 body{
     background-color: white;
+    margin: 0;
 }
 
 .header{
     background-color: rgb(213, 213, 213);
     text-align: center;
+    
 }
 
 .header img{
     height: 15%;
     width: 15%;
+}
+
+.header h1{
+    text-align: center;
+    margin: 0;
 }
 
 form{
