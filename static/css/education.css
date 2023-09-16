@@ -86,8 +86,8 @@ li a:hover,
 .pink-square {
   position: absolute;
   z-index: 3;
-  width: 363px;
-  height: 344px;
+  width: 322px;
+  height: 372px;
   flex-shrink: 0;
   left: 160px;
   top: 130px;
@@ -102,6 +102,7 @@ li a:hover,
   left: 170px;
   top: 145px;
   border-radius: 10px;
+  overflow: hidden;
   z-index: 4;
 }
 
