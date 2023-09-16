@@ -3,11 +3,14 @@ import nltk
 from textblob import TextBlob
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import openai
+import os
 
 app = Flask(__name__)
 nltk.download('all')
-
 analyzer = SentimentIntensityAnalyzer()
+
+openai.api_key = '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'
+# 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
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -24,7 +27,13 @@ def index():
             sentiment = "Negative"
         else:
             sentiment = "Neutral"
-        return render_template("index.html", userInput=userInput, sentiment=sentiment)
+        response = openai.Completion.create(
+            engine="text-davinci-002",
+            prompt=f"Provide a suggestion of an action the receiver of this message can take: '{userInput}'",
+            max_tokens=60
+        )
+        suggestion = response.choices[0].text.strip()
+        return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion)
     else:
         return render_template("index.html", userInput=None)
 
