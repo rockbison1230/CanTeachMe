@@ -1,107 +1,118 @@
 /*Body*/
 body {
-    font-family: "Noto Sans", sans-serif;
-    background-color: #fcfeff;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /*Navbar*/
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #cbd7f4;
-    padding-left: 40%;
-  }
-  
-  li {
-    float: left;
-    align-items: center;
-  }
-  
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover,
-  .active {
-    background-color: #b0c0e6;
-  }
-  
-  /*First Grid*/
-  .grid-container {
-    display: grid;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    grid-template-columns: 50% 50%;
-    align-items: center;
-  }
-  
-  /*Colorful Square CSS*/
-  .purple-rectangle {
-    position: absolute;
-    z-index: 1;
-    width: 185px;
-    height: 310px;
-    left: 385px;
-    top: 215px;
-    border-radius: 10px;
-    background: #d7c4ff;
-    opacity: 0.9;
-  }
-  
-  .blue-square {
-    position: absolute;
-    z-index: 2;
-    width: 356px;
-    height: 392px;
-    left: 200px;
-    top: 120px;
-    border-radius: 10px;
-    background: #cbd7f4;
-    opacity: 0.9;
-  }
-  
-  .pink-square {
-    position: absolute;
-    z-index: 3;
-    width: 322px;
-    height: 372px;
-    left: 160px;
-    top: 130px;
-    border-radius: 10px;
-    background: rgba(239, 116, 169, 0.7);
-  }
-  
-  .layered-img {
-    position: absolute;
-    width: 363px;
-    height: 344px;
-    left: 170px;
-    top: 145px;
-    border-radius: 10px;
-    z-index: 4;
-  }
-  
-  .grid-item h1 {
-    color: #151515;
-    margin-bottom: 0;
-    /*padding-top: 40px;*/
-    padding-left: 50px;
-    /*position: relative;*/
-    left: 80px;
-    top: 2px;
-    color: #151515;
-    text-align: center;
-    font-family: Inter;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+  font-family: "Noto Sans", sans-serif;
+  background-color: #fcfeff;
+  padding: 0;
+  margin: 0;
+}
+
+/*Navbar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cbd7f4;
+  padding-left: 40%;
+}
+
+li {
+  float: left;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.active {
+  background-color: #b0c0e6;
+}
+
+/*First Grid*/
+.grid-container {
+  display: grid;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+/*Colorful Square CSS*/
+.purple-rectangle {
+  position: absolute;
+  z-index: 1;
+  width: 185px;
+  height: 310px;
+  left: 385px;
+  top: 215px;
+  border-radius: 10px;
+  background: #d7c4ff;
+  opacity: 0.9;
+}
+
+.blue-square {
+  position: absolute;
+  z-index: 2;
+  width: 356px;
+  height: 392px;
+  left: 200px;
+  top: 120px;
+  border-radius: 10px;
+  background: #cbd7f4;
+  opacity: 0.9;
+}
+
+.pink-square {
+  position: absolute;
+  z-index: 3;
+  width: 322px;
+  height: 372px;
+  left: 160px;
+  top: 130px;
+  border-radius: 10px;
+  background: rgba(239, 116, 169, 0.7);
+}
+
+.layered-img {
+  position: absolute;
+  width: 363px;
+  height: 344px;
+  left: 170px;
+  top: 145px;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+.grid-item h1 {
+  color: #151515;
+  margin-bottom: 0;
+  /*padding-top: 40px;*/
+  padding-left: 50px;
+  /*position: relative;*/
+  left: 80px;
+  top: 2px;
+  color: #151515;
+  text-align: center;
+  font-family: Inter;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.divisionBorder {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Adjust the distance of the border from the text */
+  left: 0;
+  width: 100%;
+  margin-bottom: 70px;
+  height: 5px; /* Adjust the height of the rectangle */
+  background: rgba(203, 215, 244, 0.25);
+}
