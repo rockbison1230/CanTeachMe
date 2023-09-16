@@ -176,10 +176,13 @@ li a:hover,
   margin: 0 auto;
 }
 .tabs {
-  position: relative;
+  top: 105%;
+  left: 8%;
+  position: absolute;
   margin: 3rem 0;
-  background: #1abc9c;
-  height: 14.75rem;
+  background: #cbd7f4;
+  width: 1200px;
+  height: 702px;
 }
 .tabs::before,
 .tabs::after {
@@ -201,9 +204,9 @@ li a:hover,
   line-height: 2.75em;
   height: 3em;
   padding: 0 1.618em;
-  background: #1abc9c;
-  border-right: 0.125rem solid #16a085;
-  color: #fff;
+  background: #fcfeff;
+  border-right: 0.125rem solid #fcfeff;
+  color: black;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
@@ -219,14 +222,14 @@ li a:hover,
   top: 2.75em;
   left: 0;
   padding: 1.618rem;
-  background: #fff;
+  background: #ebf1ff;
   color: #2c3e50;
   border-bottom: 0.25rem solid #bdc3c7;
   opacity: 0;
   transition: all 0.35s;
 }
 .tab-switch:checked + .tab-label {
-  background: #fff;
+  background: #cbd7f4;
   color: #2c3e50;
   border-bottom: 0;
   border-right: 0.125rem solid #fff;
@@ -240,7 +243,6 @@ li a:hover,
   transition: all 0.35s;
 }
 
-/*Footer CSS*/
 .footer {
   bottom: -30px;
   display: flex;
@@ -263,7 +265,6 @@ li a:hover,
   padding: 0;
 }
 
-/* Style for the right section (newsletter sign-up) */
 .footer-right {
   flex: 1;
   text-align: right;
