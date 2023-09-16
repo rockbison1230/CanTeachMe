@@ -68,7 +68,7 @@ def index():
         return render_template("index.html", userInput=None)
 
 
-@app.route('/education')
+@app.route('/education.html')
 def education():
     return render_template("education.html")
 
