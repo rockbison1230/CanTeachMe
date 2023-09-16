@@ -1,0 +1,219 @@
+/*Form CSS*/
+body {
+  background-color: #fcfeff;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cbd7f4;
+  padding-left: 40%;
+}
+
+li {
+  float: left;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover,
+.active {
+  background-color: #b0c0e6;
+}
+
+.grid-container {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+/*Colorful Square CSS*/
+
+.purple-rectangle {
+  position: absolute;
+  z-index: 1;
+  width: 185px;
+  height: 310px;
+  left: 385px;
+  top: 215px;
+  border-radius: 10px;
+  background: #d7c4ff;
+  opacity: 0.9;
+}
+
+.blue-square {
+  position: absolute;
+  z-index: 2;
+  width: 356px;
+  height: 392px;
+  left: 200px;
+  top: 120px;
+  border-radius: 10px;
+  background: #cbd7f4;
+  opacity: 0.9;
+}
+
+.pink-square {
+  position: absolute;
+  z-index: 3;
+  width: 322px;
+  height: 372px;
+  left: 160px;
+  top: 130px;
+  border-radius: 10px;
+  background: rgba(239, 116, 169, 0.7);
+}
+.layered-img {
+  position: absolute;
+  width: 363px;
+  height: 344px;
+  left: 170px;
+  top: 145px;
+  border-radius: 10px;
+  z-index: 4;
+}
+
+.grid-item h1 {
+  color: #151515;
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 50px;
+  /*position: relative;*/
+  left: 80px;
+  top: 2px;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container {
+  background-color: rgba(203, 215, 244, 25%);
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+form label {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  background-color: rgb(255, 255, 255);
+  resize: none;
+  width: 1000px;
+  border-radius: 10px;
+}
+
+/*Submit Button
+.submit-button {
+  margin-top: 25px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: rgb(150, 150, 150);
+}
+
+.submit-button,
+text {
+  color: white;
+}
+
+.submit-button:hover {
+  opacity: 70%;
+}*/
+
+.footer {
+  background-color: #cbd7f4;
+}
+
+.grid-container-bottom {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+}
+
+.submit-button {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.submit-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.submit-button:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+.sentiment-Display {
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  text-align: center;
+}
+.sentiment-Positive-Display {
+  background-color: rgb(34, 244, 34);
+  padding: 8px 0.8em;
+  line-height: 2;
+  margin: 0;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.sentiment-Negative-Display {
+  background-color: red;
+  padding: 8px 0.8em;
+  line-height: 2;
+  margin: 0;
+  border-radius: 7px;
+  display: inline-block;
+}
+.grid-bottom-item {
+}

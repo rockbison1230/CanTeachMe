@@ -28,5 +28,70 @@
             <p>Suggestion: {{suggestion}}</p>
             <p>Explanation: {{explanation}}</p>
         </div>
+<<<<<<< Updated upstream
+=======
+
+        <div class = "container">
+            <form method="POST" action="/">
+                <div class = "form-member">
+                    <label for="expression">Input Message or Expression:</label><br>
+                    <textarea rows="5" id="expression" name="expression">
+                    </textarea>
+                </div>
+                <button onClick="sendFlask "class="submit-button">
+                    Submit
+                </button>
+                
+            </form>
+            {% if userInput %}
+            <div class="sentiment-Display">
+                <p>Sentiment: <span class="{%if sentiment == 'Positive'%}sentiment-Positive-Display{% elif sentiment == 'Negative'%}sentiment-Negative-Display{% endif%}">{{sentiment}}</span></p>
+                <p class="suggestion-Display">Suggestion: {{suggestion}}</p>
+                <p class="explanation-Display">Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
+
+               
+            </div>
+            {% endif %}
+        </div>
+        <div class = "expression-statement">
+            <h3>Based on the statement provided:</h3>
+        </div>
+        <div class = "footer">
+            <div class = "grid-container-bottom">
+                <div class = "grid-bottom-item" style="padding-left: 75px;">
+                    <h3>Business Logo</h3>
+                    <p>Florida International University</p>
+                    <p>3000 NE 151st St, North Miami, FL 33181</p>
+                    <br>
+                    <p>Tel: 305-348-3125</p>
+                    <p>Email: support@companyname.com</p>
+                    <p style="font-size: 14px;">Copyright &copy; 2023 Cyberdesk - All Rights Reserved</p>
+                </div> 
+                <div class = "grid-bottom-item" style="text-align: center; font-size: 20px;">
+                    <p><a href = "index.html"><strong>Solutions</strong></a></p>
+                    <br>
+                    <p><a href = "education.html"><strong>Education</strong></a></p>
+                    <br>
+                    <p><a href = "aboutus.html"><strong>About Us</strong></a></p>
+                </div>
+                <div class = "grid-bottom-item" style="text-align: center;">
+                    <h4>Sign Up For Our Newsletter!</h4>
+                    <p style="text-align: left;">Email Address</p>
+                    <hr>
+                    <p>3000 NE 151st St, North Miami, FL 33181</p>
+                    <br>
+                    <p>By submitting the form, you agree to our <u>Privacy Policy</u>.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script>src = "index.js" </script>
+          
+        
+        
+>>>>>>> Stashed changes
     </body>
 </html>
