@@ -39,15 +39,18 @@
                     <textarea rows="5" id="expression" name="expression">
                     </textarea>
                 </div>
-                <button class="submit-button">
+                <button class="button">
                     Submit
                 </button>
+                
             </form>
             {% if userInput %}
-            <div>
-                <p>Sentiment: {{sentiment}}</p>
-                <p>Suggestion: {{suggestion}}</p>
-                <p>Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
+            <div class="sentiment-Display">
+                <p>Sentiment: <span class="{%if sentiment == 'Positive'%}sentiment-Positive-Display{% elif sentiment == 'Negative'%}sentiment-Negative-Display{% endif%}">{{sentiment}}</span></p>
+                <p class="suggestion-Display">Suggestion: {{suggestion}}</p>
+                <p class="explanation-Display">Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
+
+               
             </div>
             {% endif %}
         </div>
