@@ -180,7 +180,7 @@ li a:hover,
   left: 8%;
   position: absolute;
   margin: 3rem 0;
-  background: #cbd7f4;
+  background: #ebf1ff;
   width: 1200px;
   height: 702px;
 }
@@ -210,6 +210,10 @@ li a:hover,
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
+
+  border-top: 2px solid #fcfeff; /* Add a top border for the slanted edge */
+  border-left: 1px solid #fcfeff; /* Add a left border */
+  border-right: 1px solid #fcfeff; /* Add a right border */
 }
 .tab-label:hover {
   top: -0.25rem;
@@ -224,7 +228,7 @@ li a:hover,
   padding: 1.618rem;
   background: #ebf1ff;
   color: #2c3e50;
-  border-bottom: 0.25rem solid #bdc3c7;
+  border-bottom: 0.25rem solid #ebf1ff;
   opacity: 0;
   transition: all 0.35s;
 }
@@ -232,10 +236,11 @@ li a:hover,
   background: #cbd7f4;
   color: #2c3e50;
   border-bottom: 0;
-  border-right: 0.125rem solid #fff;
+  border-right: 0.125rem solid #ebf1ff;
   transition: all 0.35s;
   z-index: 1;
   top: -0.0625rem;
+  border-radius: 9px 9px 0 0; /* Round the top corners */
 }
 .tab-switch:checked + label + .tab-content {
   z-index: 2;
