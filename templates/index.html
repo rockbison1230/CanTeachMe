@@ -20,14 +20,16 @@
                 <li><a href="aboutus.html">About Us</a></li>
             </ul>
         </div>
+        <div class = "grid-item">
+            <h1 style="display: inline">CanTeachMe?</h1>
+        </div> 
+
         <div class = "grid-container">
             <div class = "grid-item">
                 
                 <img src="../static/images/mist.jpg" alt="Silhouettes of trees in a misty forest">
             </div>
-            <div class = "grid-item">
-                <h1 style="display: inline">Let's demystify your conversation</h1>
-            </div>   
+              
         </div>
 
         <div class = "container">
@@ -41,6 +43,13 @@
                     Submit
                 </button>
             </form>
+            {% if userInput %}
+            <div>
+                <p>Sentiment: {{sentiment}}</p>
+                <p>Suggestion: {{suggestion}}</p>
+                <p>Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
+            </div>
+            {% endif %}
         </div>
         <div class = "expression-statement">
             <h3>Based on the statement provided:</h3>
@@ -75,14 +84,7 @@
 
         </div>
 
-        <!--{% if userInput %}
-        <div>
-            <p>User Input: {{userInput}}</p>
-            <p>Sentiment: {{sentiment}}</p>
-            <p>Suggestion: {{suggestion}}</p>
-            <p>Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
-        </div>
-        {% endif %}-->
+
 
         
     </body>

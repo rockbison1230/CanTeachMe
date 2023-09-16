@@ -1,108 +1,111 @@
 /*Form CSS*/
-body{
-    background-color: #FCFEFF;
-    padding: 0;
-    margin: 0;
+body {
+  background-color: #fcfeff;
+  padding: 0;
+  margin: 0;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #CBD7F4;
-    padding-left: 40%;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cbd7f4;
+  padding-left: 40%;
 }
-  
-li{
-    float: left;
-    align-items: center;
+
+li {
+  float: left;
+  align-items: center;
 }
-  
-li a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover, .active {
-    background-color:#b0c0e6;
-  }
+
+/* Change the link color to #111 (black) on hover */
+li a:hover,
+.active {
+  background-color: #b0c0e6;
+}
 
 .grid-container {
-    display: grid;
-    margin-top: 100px;
-    grid-template-columns: 50% 50%;
-    align-items: center;
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 50% 50%;
+  align-items: center;
 }
 
-.grid-item img{
-    height: 30%;
-    width: 30%;
-    padding-left: 50%;
+.grid-item img {
+  height: 30%;
+  width: 30%;
+  padding-left: 50%;
 }
 
-.grid-item h1{
-    color: #151515;
-    text-align: center;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    
+.grid-item h1 {
+  color: #151515;
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 50px;
+  /*text-align: center;*/
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.container{
-    background-color: rgba(203, 215, 244, 25%);
+.container {
+  background-color: rgba(203, 215, 244, 25%);
 }
 
-form{
-    margin: 0 auto;
-    margin-top: 150px;
-    text-align: center;
+form {
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
 }
 
-form label{
-    font-size: 20px;
-    margin-bottom: 10px;
+form label {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-textarea{
-    background-color: rgb(255, 255, 255);
-    resize: none;
-    width: 1000px;
-    border-radius: 10px;
+textarea {
+  background-color: rgb(255, 255, 255);
+  resize: none;
+  width: 1000px;
+  border-radius: 10px;
 }
 
 /*Submit Button*/
-.submit-button{
-    margin-top: 25px;
-    padding: 5px 25px;
-    border-radius: 5px;
-    background-color: rgb(150, 150, 150);
+.submit-button {
+  margin-top: 25px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  background-color: rgb(150, 150, 150);
 }
 
-.submit-button, text{
-    color: white;
+.submit-button,
+text {
+  color: white;
 }
 
-.submit-button:hover{
-    opacity: 70%;
+.submit-button:hover {
+  opacity: 70%;
 }
 
-.footer{
-    background-color: #CBD7F4;
+.footer {
+  background-color: #cbd7f4;
 }
 
-.grid-container-bottom{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    align-items: center;
+.grid-container-bottom {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
 }
 
-.grid-bottom-item{
-    
+.grid-bottom-item {
 }
