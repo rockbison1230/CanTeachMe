@@ -105,3 +105,20 @@ body {
     font-weight: 700;
     line-height: normal;
   }
+
+/*Footer CSS*/
+
+/*.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Add padding for spacing 
+  
+}*/
+
+.grid-container-bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-color: #cbd7f4;
+  }
