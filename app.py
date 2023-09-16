@@ -33,7 +33,7 @@ def index():
             max_tokens=60
         )
         suggestion = response.choices[0].text.strip()
-        return render_template("index.html", suggestion=suggestion)
+        return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion)
     else:
         return render_template("index.html", userInput=None)
 
