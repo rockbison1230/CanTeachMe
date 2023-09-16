@@ -33,7 +33,13 @@ def index():
             max_tokens=60
         )
         suggestion = response.choices[0].text.strip()
-        return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion)
+        response = openai.Completion.create(
+            engine="text-edavinci-002",
+            prompt=f"Explain what features make this sentence's sentiment positive: '{userInput}'",
+            max_tokens=60
+        )
+        explanation = response.choices[0].text.strip()
+        return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion, explanation=explanation)
     else:
         return render_template("index.html", userInput=None)
 
