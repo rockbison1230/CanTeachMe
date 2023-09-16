@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <!--Bootstrap-->
+
+
+        <!--CSS Files-->
+        <link rel="stylesheet" href="../static/style.css"/>
+
+    </head>
+    <body>
+        <form method = "POST" action = "/">
+            <div class = "form-member">
+                <label for="expression">Input Message or Expression:</label>
+                <input type="text" id="expression" name="expression" />
+                <input type = "submit" value = "Submit">
+            </div>
+        </form>
+        {% if userInput %}
+    <div>
+        <p>User Input: {{ userInput }}</p>
+        <p>Sentiment: {{sentiment}}</p>
+        <p>Suggestion: {{suggestion}}</p>
+    </div>
+    {% endif %}
+
+    </body>
+</html>
