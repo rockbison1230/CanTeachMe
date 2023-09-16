@@ -13,7 +13,7 @@
 
     <!--Body Begins-->
     <body>
-        <form>
+        <form method="POST" action="/">
             <div class = "form-member">
                 <label for="expression">Input Message or Expression:</label><br>
                 <textarea rows="5" id="expression" name="expression">
@@ -22,8 +22,8 @@
             <button class="submit-button">
                 Submit
             </button>
-            <p>Suggestion {{suggestion}}</p>
         </form>
+        <p>Suggestion {{suggestion}}</p>
 
     </body>
 </html>
