@@ -68,5 +68,10 @@ def index():
         return render_template("index.html", userInput=None)
 
 
+@app.route('/education')
+def education():
+    return render_template("education.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
