@@ -140,6 +140,12 @@ textarea {
   border-radius: 10px;
   background: rgba(203, 215, 244, 0.25);
 }
+
+.pink-star-div{
+  display: inline;
+  z-index: 2;
+}
+
 .divisionBorder::before {
   content: "";
   position: absolute;
