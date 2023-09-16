@@ -1,4 +1,14 @@
 /*Body*/
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Regular.ttf")
+      format("ttf"),
+    url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Regular.ttf")
+      format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "Noto Sans", sans-serif;
   background-color: #fcfeff;
