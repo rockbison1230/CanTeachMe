@@ -33,7 +33,20 @@ def index():
             max_tokens=60
         )
         suggestion = response.choices[0].text.strip()
-        return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion)
+        if sentiment == "Positive":
+            response = openai.Completion.create(
+                engine="text-davinci-002",
+                prompt=f"Provide a detailed explanation for why the sentiment of the input is positive.: '{userInput}'",
+                max_tokens=60
+            )
+        if sentiment == "Negative":
+            response = openai.Completion.create(
+                engine="text-davinci-002",
+                prompt=f"Provide a detailed explanation for why the sentiment of the input is negative.: '{userInput}'",
+                max_tokens=60
+            )
+        explanation = response.choices[0].text.strip()
+        return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion, explanation=explanation)
     else:
         return render_template("index.html", userInput=None)
 
