@@ -7,22 +7,35 @@
 
 
         <!--CSS Files-->
-        <link rel="stylesheet" href="../static/style.css"/>
+        <link rel="stylesheet" href="../static/css/style.css"/>
 
     </head>
 
     <!--Body Begins-->
     <body>
+        <div class = "header">
+            <h1>Let's dymystify your conversation</h1>
+            <img src="../static/images/mist.jpg" alt="Silhouettes of trees in a misty forest">
+        </div>
         <form>
             <div class = "form-member">
                 <label for="expression">Input Message or Expression:</label><br>
                 <textarea rows="5" id="expression" name="expression">
                 </textarea>
             </div>
+           
             <button class="submit-button">
                 Submit
             </button>
         </form>
+
+        {% if userInput %}
+        <div>
+            <p>User Input: {{userInput}}</p>
+            <p>Sentiment: {{sentiment}}</p>
+            <p>Suggestion: {{suggestion}}</p>
+        </div>
+        {% endif %}
 
     </body>
 </html>
