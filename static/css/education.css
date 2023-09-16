@@ -139,6 +139,10 @@ li a:hover,
   text-align: center;
 }
 
+.footer-middle ul li {
+  display: block; /* Set list items to be block-level elements */
+  margin-bottom: 10px; /* Add space between list items */
+}
 /* Style for the right section (newsletter sign-up) */
 .footer-right {
   flex: 1;
