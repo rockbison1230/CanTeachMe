@@ -112,15 +112,35 @@ li a:hover,
   bottom: -20px; /* Adjust the distance of the border from the text */
   left: 0;
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 90px;
   height: 5px; /* Adjust the height of the rectangle */
   background: rgba(203, 215, 244, 0.25);
 }
 
 /*Footer CSS*/
+
 .footer {
+  bottom: -30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; /* Add padding for spacing*/
+  background-color: #cbd7f4;
+  padding: 20px;
+}
+
+/* Style for the left section */
+.footer-left {
+  flex: 1;
+}
+
+/* Style for the middle section (navigation links) */
+.footer-middle {
+  flex: 1;
+  text-align: center;
+}
+
+/* Style for the right section (newsletter sign-up) */
+.footer-right {
+  flex: 1;
+  text-align: right;
 }
