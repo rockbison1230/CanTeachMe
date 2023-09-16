@@ -42,54 +42,54 @@ li a:hover,
 
 /*Colorful Square CSS*/
 
-.purple-rectangle{
-    position: absolute;
-    z-index: 1;
-    width: 185px;
-    height: 310px;
-    left: 385px;
-    top: 215px;
-    border-radius: 10px;
-    background: #D7C4FF;
-    opacity: 0.9;
+.purple-rectangle {
+  position: absolute;
+  z-index: 1;
+  width: 185px;
+  height: 310px;
+  left: 385px;
+  top: 215px;
+  border-radius: 10px;
+  background: #d7c4ff;
+  opacity: 0.9;
 }
 
-.blue-square{
-    position: absolute;
-    z-index: 2;
-    width: 356px;
-    height: 392px;
-    left: 200px;
-    top: 120px;
-    border-radius: 10px;
-    background: #CBD7F4;
-    opacity: 0.9;
+.blue-square {
+  position: absolute;
+  z-index: 2;
+  width: 356px;
+  height: 392px;
+  left: 200px;
+  top: 120px;
+  border-radius: 10px;
+  background: #cbd7f4;
+  opacity: 0.9;
 }
 
-.pink-square{
-    position: absolute;
-    z-index: 3;
-    width: 322px;
-    height: 372px;
-    left: 160px;
-    top: 130px;
-    border-radius: 10px;
-    background: rgba(239, 116, 169, 0.7);
+.pink-square {
+  position: absolute;
+  z-index: 3;
+  width: 322px;
+  height: 372px;
+  left: 160px;
+  top: 130px;
+  border-radius: 10px;
+  background: rgba(239, 116, 169, 0.7);
 }
-.layered-img{
-    position: absolute;
-    width: 363px;
-    height: 344px;
-    left: 170px;
-    top: 145px;
-    border-radius: 10px;
-    z-index: 4;
+.layered-img {
+  position: absolute;
+  width: 363px;
+  height: 344px;
+  left: 170px;
+  top: 145px;
+  border-radius: 10px;
+  z-index: 4;
 }
 
 .grid-item h1 {
   color: #151515;
   margin: 0;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
   padding-left: 50px;
   /*position: relative;*/
   left: 80px;
@@ -103,6 +103,7 @@ li a:hover,
 
 .container {
   background-color: rgba(203, 215, 244, 25%);
+  margin-bottom: 500px;
 }
 
 form {
