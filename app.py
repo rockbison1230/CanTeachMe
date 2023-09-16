@@ -31,19 +31,22 @@ def index():
     sentiment = None
     if request.method == "POST":
         userInput = request.form.get("expression")
-        sentiment_score = analyzer.polarity_scores(userInput)
+        analysis = TextBlob(userInput)
+        sentiment_score = analysis.sentiment.polarity
         if sentiment_score > 0:
             sentiment = "Positive"
         elif sentiment_score < 0:
             sentiment = "Negative"
         else:
             sentiment = "Neutral"
+
         response = openai.Completion.create(
             engine="text-davinci-002",
             prompt=f"Provide a suggestion of an action the receiver of this message can take: '{userInput}'",
             max_tokens=60
         )
         suggestion = response.choices[0].text.strip()
+
         if sentiment == "Positive":
             response = openai.Completion.create(
                 engine="text-davinci-002",
@@ -51,6 +54,7 @@ def index():
                 max_tokens=60
             )
         explanation = response.choices[0].text.strip()
+
         if sentiment == "Negative" or sentiment == "Neutral":
             response = openai.Completion.create(
                 engine="text-davinci-002",
@@ -58,6 +62,7 @@ def index():
                 max_tokens=100
             )
         explanation = response.choices[0].text.strip()
+
         return render_template("index.html", userInput=userInput, sentiment=sentiment, suggestion=suggestion, explanation=explanation)
     else:
         return render_template("index.html", userInput=None)
