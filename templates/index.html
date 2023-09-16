@@ -28,10 +28,13 @@
                 Submit
             </button>
         </form>
+
+        {% if userInput %}
         <div>
             <p>User Input: {{userInput}}</p>
             <p>Sentiment: {{sentiment}}</p>
             <p>Suggestion: {{suggestion}}</p>
         </div>
+        {% endif %}
     </body>
 </html>
