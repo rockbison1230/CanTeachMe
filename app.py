@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 import nltk
+from nltk.sentiment import SentimentIntensityAnalyzer
 import openai
 
 app = Flask(__name__)
@@ -9,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=["POST"])
 def index():
-    userExample = request.form("expression")
+    userExample = request.form['expression']
     return render_template("index.html", userExample=userExample)
 
 
