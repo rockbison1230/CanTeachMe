@@ -4,8 +4,8 @@ import openai
 
 app = Flask(__name__)
 
-openai.api_key = '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'
-# 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
+openai.api_key = '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'
+# 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
 general_phrases = [
     {
         "phrase": "I'd love it if you did this for me.",
