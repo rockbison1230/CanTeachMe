@@ -25,7 +25,7 @@ general_phrases = [
         "sentiment": "Neutral",
         "suggestion": "Offer your help to the person asking. This is a roundabout way of asking those around the speaker for help if it is mentioned while they are doing a task. Otherwise, it can be a hopeful question.",
         "explanation": "This input is said to have a neutral sentiment as whether it leans towards negative or positive depends on the tone the person is speaking in. If they are being sarcastic, it could be negative, but other tones can imply simple hopefulness. When in doubt, ask it out."
-    }
+    },
 
 ]
 
