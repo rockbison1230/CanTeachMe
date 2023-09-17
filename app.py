@@ -1,12 +1,9 @@
 from flask import Flask, request, render_template
 import nltk
 from textblob import TextBlob
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import openai
 
 app = Flask(__name__)
-nltk.download('all')
-analyzer = SentimentIntensityAnalyzer()
 
 openai.api_key = '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'
 # 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
