@@ -127,15 +127,15 @@ form {
   margin: 0;
   margin-top: 33px;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 28px;
 }
 
 textarea {
-  background-color: rgb(255, 255, 255);
   resize: none;
   width: 1000px;
   border-radius: 10px;
-  background: rgba(203, 215, 244, 0.25);
+  background: rgba(247, 247, 249, 0.25);
+  background-color: rgb(255, 255, 255);
 }
 
 .form-member{
@@ -147,34 +147,19 @@ textarea {
 .pink-star-div img{
   position: absolute;
   z-index: 10;
-  width: 244.759px;
-  height: 318.586px;
-  top: -100px;
-  right: 150px;
+  width: 265px;
+  height: 345px;
+  top: -103px;
+  right: 145px;
 }
 
-/*Submit Button
-.submit-button {
-  margin-top: 25px;
-  padding: 5px 25px;
-  border-radius: 5px;
-  background-color: rgb(150, 150, 150);
-}
-
-.submit-button,
-text {
-  color: white;
-}
-
-.submit-button:hover {
-  opacity: 70%;
-}*/
+/*Submit Button*/
 
 .submit-button {
   background-color: #d7c3ff;
-  border-radius: 3px;
+  border-radius: 7px;
   border: 1px solid #7aa7c7;
-  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-shadow: 2px 2px rgba(167, 166, 166, 0.6);
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
@@ -189,8 +174,9 @@ text {
   line-height: normal;
 
   margin: 0;
+  margin-top: 30px;
   outline: none;
-  padding: 8px 0.8em;
+  padding: 8px 20px;
   position: relative;
   text-align: center;
   text-decoration: none;
