@@ -21,7 +21,7 @@ body {
 
 /*Navbar*/
 
-.logo{
+.logo {
   position: absolute;
   left: 20px;
 }
@@ -53,32 +53,32 @@ li a:hover,
   font-weight: bold;
 }
 
-.nav-buttons{
+.nav-buttons {
   display: inline;
   position: relative;
   left: 1320px;
   bottom: 35px;
 }
 
-.sign-up{
+.sign-up {
   padding: 4px 7px;
   border-radius: 8px;
-  background: #FCFEFF;
+  background: #fcfeff;
   border: 0.5px solid #151515;
 }
 
-.sign-up:hover{
+.sign-up:hover {
   background: rgba(252, 254, 255, 0.5);
 }
 
-.sign-in{
+.sign-in {
   padding: 4px 7px;
   border-radius: 8px;
-  background: #D7C3FF;
+  background: #d7c3ff;
   border: 0.5px solid #151515;
 }
 
-.sign-in:hover{
+.sign-in:hover {
   background: rgba(215, 195, 255, 0.5);
 }
 
@@ -329,11 +329,15 @@ li a:hover,
   padding: 0;
 }
 
-.footer-middle a:hover{
+.footer-middle a:hover {
   font-weight: bolder;
 }
 
 .footer-right {
   flex: 1;
   text-align: right;
+}
+
+.bottomText {
+  text-align: center;
 }

@@ -79,7 +79,9 @@
         </div>
         <div class="sentiment-Display">
             <p><span class="{%if sentiment == 'Positive'%}sentiment-Positive-Display{% elif sentiment == 'Negative'%}sentiment-Negative-Display{% endif%}">{{sentiment}}</span></p>
-            <p class="suggestion-Display">Suggestion: {{suggestion}}</p>
+            <p class="suggestion-Display" style="color: #151515; font-size: 16px; font-family: NotoSans; font-weight: 400; max-width: 400px; 
+            margin: 0 auto; 
+            word-wrap: break-word">{{suggestion}}</p>
             <div style="margin:0 auto; text-align: center; width: 676px; height: 167px; background: rgba(203, 215, 244, 0.40); border-radius: 10px; padding-bottom: 40px;">
                 <p>
                     <span style="color: #151515; font-size: 24px; font-family: NotoSans; font-weight: 700; word-wrap: break-word">Why did we determine this had a</span>
@@ -90,31 +92,6 @@
                     
             </div>
         </div>
-
-        <div class="divider-container">
-
-            <div style="text-align: center; width: 1440px; height: 93px; background: rgba(203, 215, 244, 0.25); padding-bottom: 40px;">
-                <div style="color: #151515; font-size: 24px; font-family: NotoSans; font-weight: 700; padding-bottom: 20px; word-wrap: break-word">Let AI help you determine how to react to this situation.</div>
-            </div>
-
-            <div style="float: left; margin-left: 20px;">
-                <img src="images/bigQuestionMark.jpg" alt="Big Question Mark Image" />
-            </div>
-
-        </div>
-
-
-        <div class="bottomText">
-            <div style=" padding-bottom:100px;">
-                <p style="color: #151515; font-size: 20px; font-family: NotoSans; font-weight: 700; margin-bottom:20px; word-wrap: break-word">In our opinion:</p>
-                <p style=" color: #151515; font-size: 16px; font-family: NotoSans; font-weight: 400; max-width: 400px; 
-                margin: 0 auto; 
-                word-wrap: break-word">{{suggestion}}</p>
-            </div>
-        </div>
-
-
-
 
         <!--Footer-->
         <div class = "footer">
