@@ -261,26 +261,30 @@ text {
   cursor: text; /* Change cursor to text input on hover */
 }
 
-/* Remove input box styling */
-#emailInput {
-  border: none;
-  outline: none;
-  background: transparent;
-  width: 100%;
-}
-
 /*Footer CSS*/
-/*.footer {
+.footer {
+  bottom: -30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; /* Add padding for spacing 
-  
-}*/
-
-.grid-container-bottom {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  align-items: center;
   background-color: #cbd7f4;
+  padding: 20px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-middle {
+  font-size: 13px;
+  list-style: none;
+  text-align: center;
+}
+.footer-middle li {
+  padding: 0;
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
 }
