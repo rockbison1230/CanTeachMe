@@ -18,6 +18,10 @@ body {
 
 /*Navbar*/
 
+.logo{
+  position: absolute;
+  left: 20px;
+}
 
 ul {
   list-style-type: none;
@@ -162,6 +166,8 @@ form {
 }
 
 textarea {
+  padding-top: 0;
+  padding-left: 0;
   resize: none;
   width: 1000px;
   border-radius: 10px;
@@ -300,8 +306,13 @@ textarea {
   list-style: none;
   text-align: center;
 }
+
 .footer-middle li {
   padding: 0;
+}
+
+.footer-middle a:hover{
+  font-weight: bolder;
 }
 
 .footer-right {
