@@ -1,16 +1,13 @@
 /*Body*/
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Regular.ttf")
-      format("ttf"),
-    url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Regular.ttf")
-      format("ttf");
+  font-family: "NotoSans";
+  src: url("static/fonts/Noto_Sans/NotoSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "NotoSans", sans-serif;
   background-color: #fcfeff;
   padding: 0;
   margin: 0;
@@ -44,7 +41,6 @@ li a:hover,
   background-color: #b0c0e6;
 }
 
-/*First Grid*/
 .grid-container {
   display: grid;
   margin-top: 100px;
@@ -53,7 +49,6 @@ li a:hover,
   align-items: center;
 }
 
-/*Colorful Square CSS*/
 .purple-rectangle {
   position: absolute;
   z-index: 1;
@@ -109,7 +104,7 @@ li a:hover,
   top: 2px;
   color: #151515;
   text-align: center;
-  font-family: Inter;
+  font-family: "NontSans";
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -118,13 +113,14 @@ li a:hover,
 
 /*Form CSS*/
 .container {
+  height: 300px;
   background-color: rgba(203, 215, 244, 25%);
   margin-bottom: 500px;
 }
 
 form {
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 170px;
   text-align: center;
 }
 
@@ -141,13 +137,13 @@ textarea {
   background: rgba(203, 215, 244, 0.25);
 }
 
-.form-member{
+.form-member {
   margin: 0;
   position: relative;
   padding: 0;
 }
 
-.pink-star-div img{
+.pink-star-div img {
   position: absolute;
   z-index: 10;
   width: 244.759px;
@@ -197,7 +193,7 @@ text {
     sans-serif;
   color: #151515;
   text-align: center;
-  font-family: Inter;
+  font-family: NotoSans, sans-serif;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
