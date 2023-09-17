@@ -128,11 +128,6 @@ form {
   text-align: center;
 }
 
-form label {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
 textarea {
   background-color: rgb(255, 255, 255);
   resize: none;
@@ -152,7 +147,7 @@ textarea {
   z-index: 10;
   width: 244.759px;
   height: 318.586px;
-  top: -120px;
+  top: -100px;
   right: 150px;
 }
 
