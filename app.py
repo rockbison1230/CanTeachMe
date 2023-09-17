@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template
-import nltk
 from textblob import TextBlob
 import openai
 
