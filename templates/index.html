@@ -47,15 +47,19 @@
         <div class = "container">
             <form method="POST" action="/">
                 <div class = "form-member">
-                    <label for="expression">Input Message or Expression:</label><br>
-                    <textarea rows="5" id="expression" name="expression">
-                    </textarea>
+                    <div class = "pink-star-div">
+                        <label for="expression">Input Message or Expression:</label><br>
+                        <textarea rows="5" id="expression" name="expression">
+                        </textarea>
+                        <img src="../static/images/pink-star.png" alt="A pink star like shape outlining the textbox">
+                    </div>
+                    
                 </div>
                 <button class="submit-button">
                     Submit
                 </button>
-                
             </form>
+            
             <div class="sentiment-Display">
                 <p>Sentiment: <span class="{%if sentiment == 'Positive'%}sentiment-Positive-Display{% elif sentiment == 'Negative'%}sentiment-Negative-Display{% endif%}">{{sentiment}}</span></p>
                 <p class="suggestion-Display">Suggestion: {{suggestion}}</p>

@@ -141,9 +141,19 @@ textarea {
   background: rgba(203, 215, 244, 0.25);
 }
 
-.pink-star-div{
-  display: inline;
-  z-index: 2;
+.form-member{
+  margin: 0;
+  position: relative;
+  padding: 0;
+}
+
+.pink-star-div img{
+  position: absolute;
+  z-index: 10;
+  width: 244.759px;
+  height: 318.586px;
+  top: -120px;
+  right: 150px;
 }
 
 .divisionBorder::before {
