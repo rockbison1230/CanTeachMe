@@ -20,6 +20,13 @@ general_phrases = [
         "explanation": "This input is said to have a neutral sentiment. For many, 'how are you' is another way of being polite and starting a conversation. Especially if they are people you are not acquainted with, they are not often expecting a lengthy or even genuine reply. The phrase itself is open-ended and often has an expected reply of 'I'm good / okay.' "
 
     },
+    {
+        "phrase": "Wouldn't it be nice if someone helped?",
+        "sentiment": "Neutral",
+        "suggestion": "Offer your help to the person asking. This is a roundabout way of asking those around the speaker for help if it is mentioned while they are doing a task. Otherwise, it can be a hopeful question.",
+        "explanation": "This input is said to have a neutral sentiment as whether it leans towards negative or positive depends on the tone the person is speaking in. If they are being sarcastic, it could be negative, but other tones can imply simple hopefulness. When in doubt, ask it out."
+    }
+
 ]
 
 
