@@ -156,26 +156,30 @@ li a:hover,
   line-height: normal;
 }
 
-.divisionBorder {
-  width: 100%; /* Adjust the width as needed */
-  height: 200px; /* Adjust the height as needed */
+.advertisement{
+  display: inline;
+  text-align: center;
+  margin-bottom: 250px;
+  padding-top: 10px;
   background-color: rgba(203, 215, 244, 0.25);
-  border-radius: 4px;
-  margin-bottom: 1000px;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.advertisement img{
+  position: relative;
+  right: -230px;
+  bottom: 60px;
+}
 
-  font-family: "Noto Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
+.advertisement h2{
+  position: relative;
+  top: 80px;
 }
 
 /* Style for the button */
-.divisionBorder button {
+.advertisement button {
   background-color: #d7c3ff;
   border-radius: 3px;
   border: 1px solid #7aa7c7;
@@ -193,6 +197,8 @@ li a:hover,
 
   padding: 8px 0.8em;
   position: relative;
+  right: -145px;
+  bottom: 150px;
   text-align: center;
 }
 
@@ -206,15 +212,16 @@ li a:hover,
 .wrapper {
   max-width: 50rem;
   width: 80%;
-  margin: 0 auto;
+  margin-top: 1500px;
 }
 .tabs {
   top: 105%;
-  left: 13%;
+  left: 3%;
   position: absolute;
-  margin: 3rem 0;
+  margin-top: 200px;
+  margin-bottom: 200px;
   background: #ebf1ff;
-  width: 1200px;
+  width: 1450px;
   height: 702px;
 }
 .tabs::before,
@@ -277,6 +284,7 @@ li a:hover,
   top: -0.0625rem;
   border-radius: 9px 9px 0 0; /* Round the top corners */
 }
+
 .tab-switch:checked + label + .tab-content {
   z-index: 2;
   opacity: 1;
@@ -284,31 +292,32 @@ li a:hover,
 }
 
 .hozLabels {
-  position: relative; /* Use relative positioning */
-  top: -650px; /* Adjust the top value to move the elements up */
-  left: -190px;
-  line-height: 2.75em;
+  position: relative;
+  top: 120px;
+  left: 70px;
   color: black;
-  cursor: pointer;
-
-  margin-bottom: 10px; /* Add space below each tab */
-  transition: all 0.25s;
-  width: 120px;
-  height: 35px;
-
-  background: #cbd7f4;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  border: 0.24px #151515 solid;
+  width: 180px;
+  height: 40px;
+  margin-bottom: 10px;
   z-index: 2;
+  align-content: left;
+  line-height: 2.75em;
+  padding-left: 5px;
 }
 
 .autismText {
-  margin-left: 100px;
-  margin-right: 90px;
+  margin-left: 210px;
+  margin-right: -20px;
+  padding-right: 50px;
 }
+
+/*Footer CSS*/
 .footer {
+  margin-top: 600px; 
+  margin-right: 0;
+  margin-left:0;
   bottom: -30px;
+  width: 1479px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -325,6 +334,7 @@ li a:hover,
   list-style: none;
   text-align: center;
 }
+
 .footer-middle li {
   padding: 0;
 }
