@@ -62,17 +62,19 @@
                     Submit
                 </button>
             </form>
-            
-            <div class="sentiment-Display">
-                <p>Sentiment: <span class="{%if sentiment == 'Positive'%}sentiment-Positive-Display{% elif sentiment == 'Negative'%}sentiment-Negative-Display{% endif%}">{{sentiment}}</span></p>
-                <p class="suggestion-Display">Suggestion: {{suggestion}}</p>
-                <p class="explanation-Display">Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
-            </div>
         </div>
         <div class = "expression-statement">
-            <h3>Based on the statement provided:</h3>
+            <img src="../static/images/pink-arrow.png" alt="A pink arrow pointing at the statement">
+            <h3 style = "display: inline;">
+                Based on the statement provided, the overarching tone is:
+            </h3>
         </div>
-        
+        <br>
+        <div class="sentiment-Display">
+            <p>Sentiment: <span class="{%if sentiment == 'Positive'%}sentiment-Positive-Display{% elif sentiment == 'Negative'%}sentiment-Negative-Display{% endif%}">{{sentiment}}</span></p>
+            <p class="suggestion-Display">Suggestion: {{suggestion}}</p>
+            <p class="explanation-Display">Why did we say this input has a {{sentiment}} sentiment? {{explanation}}</p>
+        </div>
 
         <!--Footer-->
         <div class = "footer">
@@ -87,9 +89,9 @@
             </div>
             <div class="footer-middle">
                     <ul>
-                        <li><a href="#"><b>Solutions</b></a></li>
-                        <li><a href="#"><b>Education</b></a></li>
-                        <li><a href="#"><b>About Us</b></a></li>
+                        <li><a href="index.html"><b>Solutions</b></a></li>
+                        <li><a href="education.html"><b>Education</b></a></li>
+                        <li><a href="aboutus.html"><b>About Us</b></a></li>
                     </ul>
             </div>
             <div class="footer-right" style="text-align: right;">
