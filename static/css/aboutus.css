@@ -31,7 +31,7 @@ li a {
   
 li a:hover,
   .active{
-  background-color: #b0c0e6;
+    font-weight: bold;
 }
   
 /*First Grid*/

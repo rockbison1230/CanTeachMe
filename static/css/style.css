@@ -17,6 +17,8 @@ body {
 }
 
 /*Navbar*/
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -41,7 +43,36 @@ li a {
 
 li a:hover,
 .active {
-  background-color: #b0c0e6;
+  font-weight: bold;
+}
+
+.nav-buttons{
+  display: inline;
+  position: relative;
+  left: 1320px;
+  bottom: 35px;
+}
+
+.sign-up{
+  padding: 4px 7px;
+  border-radius: 8px;
+  background: #FCFEFF;
+  border: 0.5px solid #151515;
+}
+
+.sign-up:hover{
+  background: rgba(252, 254, 255, 0.5);
+}
+
+.sign-in{
+  padding: 4px 7px;
+  border-radius: 8px;
+  background: #D7C3FF;
+  border: 0.5px solid #151515;
+}
+
+.sign-in:hover{
+  background: rgba(215, 195, 255, 0.5);
 }
 
 /*First Grid*/
