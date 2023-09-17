@@ -2,9 +2,7 @@ from flask import Flask, request, render_template
 import nltk
 from textblob import TextBlob
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 import openai
-import os
 
 app = Flask(__name__)
 nltk.download('all')

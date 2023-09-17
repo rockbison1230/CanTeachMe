@@ -177,7 +177,7 @@ li a:hover,
 }
 .tabs {
   top: 105%;
-  left: 8%;
+  left: 13%;
   position: absolute;
   margin: 3rem 0;
   background: #ebf1ff;
@@ -210,7 +210,8 @@ li a:hover,
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
-
+  padding-left: 20px; /* Add left padding for white space on the left */
+  padding-right: 20px;
   border-top: 2px solid #fcfeff; /* Add a top border for the slanted edge */
   border-left: 1px solid #fcfeff; /* Add a left border */
   border-right: 1px solid #fcfeff; /* Add a right border */
@@ -234,6 +235,7 @@ li a:hover,
 }
 .tab-switch:checked + .tab-label {
   background: #cbd7f4;
+  padding-right: 30px;
   color: #2c3e50;
   border-bottom: 0;
   border-right: 0.125rem solid #ebf1ff;
@@ -248,6 +250,18 @@ li a:hover,
   transition: all 0.35s;
 }
 
+.horizontal-tabs {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebf1ff;
+  border-top-left-radius: 5px; /* Add rounded corners to the top-left */
+  border-bottom-left-radius: 5px; /* Add rounded corners to the bottom-left */
+  margin-right: 10px; /* Add right margin for space between left tabs and right tabs */
+}
+.autismText {
+  margin-left: 100px;
+  margin-right: 90px;
+}
 .footer {
   bottom: -30px;
   display: flex;
