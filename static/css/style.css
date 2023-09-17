@@ -1,11 +1,7 @@
 /*Body*/
-
 @font-face {
   font-family: "Noto Sans";
-  src: url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Regular.ttf")
-      format("ttf"),
-    url("/Users/amanamartin/Desktop/GitHub/shellHacks_Project/static/fonts/Noto_Sans/NotoSans-Regular.ttf")
-      format("ttf");
+  src: url("static/fonts/Noto_Sans/NotoSans-Regular.ttf"), format("truefont");
   font-weight: normal;
   font-style: normal;
 }
@@ -18,6 +14,10 @@ body {
 
 /*Navbar*/
 
+.logo {
+  position: absolute;
+  left: 20px;
+}
 
 ul {
   list-style-type: none;
@@ -46,32 +46,32 @@ li a:hover,
   font-weight: bold;
 }
 
-.nav-buttons{
+.nav-buttons {
   display: inline;
   position: relative;
   left: 1320px;
   bottom: 35px;
 }
 
-.sign-up{
+.sign-up {
   padding: 4px 7px;
   border-radius: 8px;
-  background: #FCFEFF;
+  background: #fcfeff;
   border: 0.5px solid #151515;
 }
 
-.sign-up:hover{
+.sign-up:hover {
   background: rgba(252, 254, 255, 0.5);
 }
 
-.sign-in{
+.sign-in {
   padding: 4px 7px;
   border-radius: 8px;
-  background: #D7C3FF;
+  background: #d7c3ff;
   border: 0.5px solid #151515;
 }
 
-.sign-in:hover{
+.sign-in:hover {
   background: rgba(215, 195, 255, 0.5);
 }
 
@@ -162,6 +162,8 @@ form {
 }
 
 textarea {
+  padding-top: 0;
+  padding-left: 0;
   resize: none;
   width: 1000px;
   border-radius: 10px;
@@ -169,13 +171,13 @@ textarea {
   background-color: rgb(255, 255, 255);
 }
 
-.form-member{
+.form-member {
   margin: 0;
   position: relative;
   padding: 0;
 }
 
-.pink-star-div img{
+.pink-star-div img {
   position: absolute;
   z-index: 10;
   width: 265px;
@@ -236,12 +238,12 @@ textarea {
 
 /*Sentiment Display Area*/
 
-.expression-statement{
+.expression-statement {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.expression-statement img{
+.expression-statement img {
   margin-right: 5px;
   position: relative;
   top: 5px;
@@ -251,6 +253,7 @@ textarea {
   font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
     sans-serif;
   text-align: center;
+  padding-bottom: 20px;
 }
 .sentiment-Positive-Display {
   background-color: rgb(34, 244, 34);
@@ -270,6 +273,16 @@ textarea {
   display: inline-block;
 }
 
+.explanation-pos-Display {
+  color: rgb(34, 244, 34);
+}
+
+.explanation-neg-Display {
+  color: red;
+}
+.bottomText {
+  text-align: center;
+}
 .input-wrapper {
   display: inline-block;
   border-bottom: 1px solid transparent;
@@ -300,8 +313,13 @@ textarea {
   list-style: none;
   text-align: center;
 }
+
 .footer-middle li {
   padding: 0;
+}
+
+.footer-middle a:hover {
+  font-weight: bolder;
 }
 
 .footer-right {
